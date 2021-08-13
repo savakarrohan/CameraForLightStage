@@ -162,13 +162,13 @@ with picamera.PiCamera(resolution=(2040,2040)) as camera:
         (data, addr) = UDPSock.recvfrom(buf)
         data = data.decode()
         if data == 'c':
-            captureFile = FolderImages+str(counterImages)+'.jpg'
-            camera.capture(captureFile,format = 'jpeg')
+            captureFile = FolderImages+str(counterImages)+'.png'
+            camera.capture(captureFile,format = 'png')
             counterImages += 1
             
         if data =='a':
-            captureCalibrate = FolderCalibration + str(counterCalibration) + '.jpg'
-            camera.capture(captureCalibrate,format='jpeg')
+            captureCalibrate = FolderCalibration + str(counterCalibration) + '.png'
+            camera.capture(captureCalibrate,format='png')
             counterCalibration +=1
             
         if data =='q':

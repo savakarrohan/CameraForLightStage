@@ -21,12 +21,14 @@ while True:
         print("Taken Image of object")
         UDPSock1.sendto(string1.encode(), addr1)
         UDPSock2.sendto(string1.encode(), addr2)
+        sleep(1)
         
     if  IncomingChar == 'a' :    #This is going to be used for calibration
         string1 = 'a'
         print("Taken Calibration capture")
         UDPSock1.sendto(string1.encode(), addr1) #This is to quit the system
         UDPSock2.sendto(string1.encode(), addr2)
+        sleep(1)
         
     if IncomingChar == 'q':
         break
