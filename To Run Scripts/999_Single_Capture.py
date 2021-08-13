@@ -14,7 +14,7 @@ UDPSock = socket(AF_INET, SOCK_DGRAM)
 UDPSock.bind(addr)
 print("Waiting to receive messages...")
 
-with picamera.PiCamera(resolution=(3040,3040)) as camera:
+with picamera.PiCamera(resolution=(2040,2040)) as camera:
     
     #Setting up consistent images
     #AWB_mode
