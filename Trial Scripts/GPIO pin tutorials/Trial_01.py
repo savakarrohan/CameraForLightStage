@@ -13,12 +13,12 @@ led = 4
 GPIO.setup(led,GPIO.OUT)
 
 #Turn on the LED
-print "LED on"
+print("Led on")
 GPIO.output(led,1)
 
 #Wait 5s
 time.sleep(5)
 
 #Turn off the LED
-print "LED off"
+print ("LED off")
 GPIO.output(led,0)
